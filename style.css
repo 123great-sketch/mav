@@ -898,26 +898,46 @@ footer h1{
       overflow-x: hidden;
     }
     header {
-      flex-direction: column;
-      height: auto;
-      padding: 10px;
+      align-items: center;
+      text-align: center;
+      height: 40px;
+    }
+
+    .nav-links{
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .nav-links u1 a{
+        font-size: 18px;
+    }
+
+    .scroll-down {
+        margin-bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
     }
   
     header u1 {
-      position: static;
-      transform: none;
-      width: auto;
-      gap: 10px;
-      padding: 10px;
       flex-direction: column;
-      flex-wrap: wrap;
-      background: transparent;
-      box-shadow: none;
-      justify-content: center;
+      position: absolute;
+      top:70px;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 20px;
+      display: flex;
     }
 
-    header u1 a{
-        font-size: 14px;
+    header u1.active {
+        display: flex;
+    }
+
+    .menu-icon{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
     }
     
 
@@ -980,12 +1000,13 @@ footer h1{
     .project-card {
       flex-direction: column;
       gap: 20px;
+      display: grid;
       height: auto;
     }
   
     .project-info {
       width: 100%;
-      padding: 0;
+      padding: 20px;
       text-align: center;
     }
   
@@ -993,6 +1014,10 @@ footer h1{
       flex-direction: column;
       height: auto;
       align-items: center;
+    }
+
+    .skills-image{
+        margin-left: 20px;
     }
   
     .designer, .coder {
@@ -1013,4 +1038,10 @@ footer h1{
       position: static;
       text-align: center;
     }
+  }
+
+  .slider .list{
+      display: flex;
+      gap: 5px;
+      margin-bottom: 10px;
   }
