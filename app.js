@@ -16,3 +16,9 @@ videoList.forEach(function(video){
     })
 })
 
+const menuIcon = document.querySelector('.menu-icon');
+const navList = document.querySelector('header ul');
+
+menuIcon.addEventListener('click', () => {
+  navList.classList.toggle('active');
+});
